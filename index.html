@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" href="/musegan/assets/css/style.css?v=ff114ccd7000f8dd8695bdfa5cafcea8662fcbfc">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="title"><h1><a class="nohover" href="https://salu133445.github.io/musegan">MuseGAN</a></h1></div>
+
+        <div class="author-info">
+          <p class="author-names">
+            <a href="https://orcid.org/0000-0002-7028-7604">Hong-Fei Wang</a>,
+            <a href="https://github.com/wayne391">Yi Zou</a>,
+            <a href="https://klmav.cuc.edu.cn/2018/1219/c3500a91280/page.htm">Long Ye</a>,
+            <a href="https://klmav.cuc.edu.cn/2022/0218/c3500a191052/page.htm">Hao-Nan Cheng</a>
+          </p>
+          <p class="author-affiliations">
+            Key lab, <br>Communication University of China, <br>Academic
+          </p>
+        </div>
+
+
+
+        </nav>
+      </header>
+      <section>
+
+      <h1 id="results">Results</h1>
+
+<h2 id="pianoroll-visualizations">Pianoroll Visualizations</h2>
+
+<p><img src="figs/evolution.png" alt="evolution" style="max-width:none;" /></p>
+<p class="caption">Evolution of the generated pianorolls as a function of update steps</p>
+
+<p><img src="figs/hybrid.png" alt="hybrid" style="max-width:none;" /></p>
+<p class="caption">Randomly-chosen generated pianorolls (generated from scratch)</p>
+
+<h2 id="audio-samples">Audio Samples</h2>
+
+<blockquote>
+  <p><strong>Note that all the audio samples presented below have been downsampled to 4
+time steps per beat (originally 24 time steps per beat).</strong></p>
+</blockquote>
+
+<h3 id="best-samples">Best samples</h3>
+
+<audio src="audio/best_samples.mp3" type="audio/mpeg" controls="" controlsList="nodownload">Your browser does not support the audio element.</audio>
+
+<h3 id="generation-from-scratch">Generation from scratch</h3>
+
+<blockquote>
+  <p>No cherry-picking. Some might sound unpleasant. <strong>Lower the volume first!</strong></p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Model</th>
+      <th style="text-align: center">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">composer</td>
+      <td style="text-align: center"><audio src="audio/from_scratch_composer.mp3" type="audio/mpeg" controls="" controlsList="nodownload">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">jamming</td>
+      <td style="text-align: center"><audio src="audio/from_scratch_jamming.mp3" type="audio/mpeg" controls="" controlsList="nodownload">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">hybrid</td>
+      <td style="text-align: center"><audio src="audio/from_scratch_hybrid.mp3" type="audio/mpeg" controls="" controlsList="nodownload">Your browser does not support the audio element.</audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="track-conditional-generation">Track-conditional generation</h3>
+
+<blockquote>
+  <p>No cherry-picking. Some might sound unpleasant. <strong>Lower the volume first!</strong></p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Model</th>
+      <th style="text-align: center">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">composer</td>
+      <td style="text-align: center"><audio src="audio/track_conditional_composer.mp3" type="audio/mpeg" controls="" controlsList="nodownload">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">jamming</td>
+      <td style="text-align: center"><audio src="audio/track_conditional_jamming.mp3" type="audio/mpeg" controls="" controlsList="nodownload">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">hybrid</td>
+      <td style="text-align: center"><audio src="audio/track_conditional_hybrid.mp3" type="audio/mpeg" controls="" controlsList="nodownload">Your browser does not support the audio element.</audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </section>
+      <footer>
+        <hr>
+        <small>Hosted on GitHub Pages &mdash; Theme adapted from <a href="https://github.com/orderedlist/minimal">minimal</a> by <a href="https://github.com/orderedlist">orderedlist</a></small>
+      </footer>
+    </div>
+    <script src="/musegan/assets/js/scale.fix.js"></script>
+  </body>
+</html>
